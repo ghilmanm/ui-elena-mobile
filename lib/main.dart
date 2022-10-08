@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'app/data/services/dependency_injection.dart';
@@ -21,9 +20,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-   return ScreenUtilInit(
-      builder: (_,__) {
+    return ScreenUtilInit(
+      builder: (_, __) {
         return GetMaterialApp(
           title: 'Elena',
           debugShowCheckedModeBanner: false,
@@ -33,7 +31,7 @@ class MyApp extends StatelessWidget {
           translations: Translation(),
           locale: const Locale('en'),
           fallbackLocale: const Locale('en'),
-          initialRoute: AppRoutes.HOME,
+          initialRoute: AppRoutes.SPLASH,
           unknownRoute: AppPages.unknownRoutePage,
           getPages: AppPages.pages,
           builder: (_, child) {
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
           },
         );
       },
-     //! Must change it to true if you want to use the ScreenUtil
+      //! Must change it to true if you want to use the ScreenUtil
       designSize: const Size(411, 823),
     );
   }
