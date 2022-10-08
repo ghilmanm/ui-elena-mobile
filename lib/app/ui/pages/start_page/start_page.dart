@@ -1,3 +1,4 @@
+import 'package:elena/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -47,15 +48,18 @@ class StartPage extends GetView<StartController> {
                         fontWeight: FontWeight.w600),
                     textAlign: TextAlign.center,
                   ),
+                  const SizedBox(height: 10),
                   Stack(
+                    alignment: Alignment.center,
                     children: [
+                      SvgPicture.asset('assets/image/ellipse1.svg'),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            shape: CircleBorder(),
-                            padding: EdgeInsets.all(20),
-                          ),
-                          onPressed: () {},
-                          child: SvgPicture.asset('assets/image/back_icon.svg'))
+                              shape: const CircleBorder(),
+                              padding: const EdgeInsets.all(20),
+                              backgroundColor: BUTTON_COLOR),
+                          onPressed: () => Get.offNamed(AppRoutes.LOGIN),
+                          child: const Icon(Icons.arrow_forward))
                     ],
                   )
                 ],
