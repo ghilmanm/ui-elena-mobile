@@ -1,3 +1,4 @@
+import 'package:elena/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -41,7 +42,7 @@ class LoginPage extends GetView<LoginController> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 39),
+                      const SizedBox(height: 32),
                       Obx(() => TextField(
                             controller: controller.controllerPass.value,
                             obscureText: controller.isObsecure.value,
@@ -88,15 +89,18 @@ class LoginPage extends GetView<LoginController> {
                             color: Get.isDarkMode ? null : BUTTON_COLOR),
                       )),
                 ),
-                const SizedBox(height: 43),
+                const SizedBox(height: 39),
                 SizedBox(
                   width: double.infinity,
                   height: 57,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.offNamed(AppRoutes.HOME),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: BUTTON_COLOR,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+                      shadowColor:  BUTTON_COLOR,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40)),
+                      elevation: 7.0
                     ),
                     child: Text(
                       'Masuk',
