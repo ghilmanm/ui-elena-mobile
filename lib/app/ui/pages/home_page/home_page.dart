@@ -13,9 +13,11 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const PreferredSize(
-        preferredSize: Size.fromHeight(87.0),
-        child: Appbar(),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(87.0),
+        child: Appbar(
+          onTap: () => controller.buttomSetting(),
+        ),
       ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
@@ -204,56 +206,70 @@ class HomePage extends GetView<HomeController> {
                 physics: const BouncingScrollPhysics(),
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
-                itemCount: controller.listUnfinishedTask.length,
+                itemCount: controller.listHistory.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    width: 278,
-                    height: 128,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo,
+                  return InkWell(
+                    onTap: () {},
+                    customBorder: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 15.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                    child: Ink(
+                      width: 278,
+                      height: 128,
+                      decoration: BoxDecoration(
+                        color: COLOR_HOSTORY[index % COLOR_HOSTORY.length],
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 15.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    controller.listHistory[index].title ??
+                                        'Memuat...',
+                                    style: Get.textTheme.subtitle2!.copyWith(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                  Text(
+                                    controller.listHistory[index].subtitle ??
+                                        'Memuat...',
+                                    style: Get.textTheme.subtitle2!.copyWith(
+                                      color: const Color(0xFFC2BBBB),
+                                      fontSize: 12,
+                                      fontStyle: FontStyle.italic,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Stack(
+                              alignment: Alignment.center,
                               children: [
-                                Text(
-                                  'Payroll Odoo',
-                                  style: Get.textTheme.subtitle2!.copyWith(
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w800,
-                                  ),
+                                SvgPicture.asset(
+                                  'assets/image/bg_history.svg',
+                                  color: COLOR_HOSTORY_BG[
+                                      index % COLOR_HOSTORY_BG.length],
                                 ),
-                                Text(
-                                  'Enterprise Resource Planning',
-                                  style: Get.textTheme.subtitle2!.copyWith(
-                                    color: const Color(0xFFC2BBBB),
-                                    fontSize: 12,
-                                    fontStyle: FontStyle.italic,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
+                                Image.asset(controller.assetKategori(
+                                    controller.listHistory[index].kategori ??
+                                        '')),
                               ],
                             ),
                           ),
-                        ),
-                        Expanded(
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              SvgPicture.asset('assets/image/bg_history.svg'),
-                              Image.asset('assets/icons/book.png'),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   );
                 },

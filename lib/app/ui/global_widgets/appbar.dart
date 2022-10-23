@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Appbar extends GetView<HomeController> {
-  const Appbar({Key? key}) : super(key: key);
+  final VoidCallback? onTap;
+  const Appbar({Key? key, this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +17,12 @@ class Appbar extends GetView<HomeController> {
           padding: const EdgeInsets.all(20.0),
           child: Row(
             mainAxisAlignment:
-            MainAxisAlignment.start, //change here don't //worked
+                MainAxisAlignment.start, //change here don't //worked
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: onTap ?? () {},
                 customBorder: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
@@ -37,7 +38,7 @@ class Appbar extends GetView<HomeController> {
               ),
               const Spacer(),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 customBorder: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(13),
                 ),

@@ -27,7 +27,8 @@ class AppPages {
       name: AppRoutes.HOME,
       page: () => const HomePage(),
       binding: HomeBinding(),
-      transition: _defaultTransition,
+      transition: _rightToLeftTransition,
+        transitionDuration: const Duration(milliseconds: 300)
     ),
     GetPage(
       name: AppRoutes.SPLASH,

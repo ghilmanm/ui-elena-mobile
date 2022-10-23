@@ -48,7 +48,7 @@ class SearchAndFilter extends GetView<HomeController> {
           customBorder: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
-          onTap: () {},
+          onTap: () => controller.buttomFilter(),
           child: Ink(
             height: 50,
             width: 53,

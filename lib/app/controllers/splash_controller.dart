@@ -5,7 +5,6 @@ class SplashController extends GetxController {
   final version = '1.0.0'.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
     initializeSettings();
     super.onInit();
   }
