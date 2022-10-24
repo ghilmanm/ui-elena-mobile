@@ -46,7 +46,7 @@ STT Terpadu Nurul Fikri <b>(Mayang Damayanti/0110118041)</b>
 [stars-url]: https://github.com/ghilmanm/ui-elena-mobile/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ghilmanm/ui-elena-mobile.svg?style=for-the-badge
 [issues-url]: https://github.com/ghilmanm/ui-elena-mobile/issues
-[license-shield]: https://img.shields.io/github/license/ghilmanm/ui-elena-mobile.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/ghilmanm/ui-elena-mobile?style=for-the-badge
 [license-url]: https://github.com/ghilmanm/ui-elena-mobile/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/muhammad-ghilman-firdaus-b118b818b
