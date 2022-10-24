@@ -79,6 +79,11 @@ because your needs may be different. So I will help as well as improve the code 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Built With
+* [![Dart][dart]][dart-url]
+* [![Flutter][Flutter]][Flutter-url]
+* [![Getx][Getx]][getx-url]
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -95,19 +100,9 @@ because your needs may be different. So I will help as well as improve the code 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/muhammad-ghilman-firdaus-b118b818b
 [product-screenshot]: https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/screenshot.png
-[next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[next-url]: https://nextjs.org/
-[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[react-url]: https://reactjs.org/
-[vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[vue-url]: https://vuejs.org/
-[angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[angular-url]: https://angular.io/
-[svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[svelte-url]: https://svelte.dev/
-[laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[laravel-url]: https://laravel.com
-[bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[bootstrap-url]: https://getbootstrap.com
-[jquery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[jquery-url]: https://jquery.com
+[Flutter]: https://img.shields.io/badge/flutter-2979FF?style=for-the-badge&logo=flutter
+[flutter-url]: https://flutter.dev/
+[Getx]: https://img.shields.io/badge/Getx-9C27B0?style=for-the-badge&logo=getx&logoColor=61DAFB
+[getx-url]: https://github.com/jonataslaw/getx/blob/master/README.id-ID.md
+[dart]: https://img.shields.io/badge/Dart-0D47A1?style=for-the-badge&logo=dart
+[dart-url]: https://dart.dev/
