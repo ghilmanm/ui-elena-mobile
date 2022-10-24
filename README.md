@@ -35,6 +35,50 @@ STT Terpadu Nurul Fikri <b>(Mayang Damayanti/0110118041)</b>
   </p>
 </div>
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<p align="center">
+<img src="https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/screenshot.png" alt="drawing" height="500" align="center"/>
+</p>
+
+I created this project based on a thesis written by Mayang Damayanti, in order to facilitate further development by students/lecturers who want to create an elena mobile application. this is my dedication to the campus so that an elena application can be made.
+
+Here's why:
+* If you want to build elena mobile in your thesis or just develop elena mobile (I would love to), your time should be focused on creating the backend and implementing the UI.
+* You shouldn't do from scratch to build elena mobile app.
+* This ui is made with flutter to make it easy on multiplatform :smile:
+
+Of course, not all of these ui's are implemented easily
+because your needs may be different. So I will help as well as improve the code to make it easier to use. You can also suggest changes by forking this repo and making a pull request or opening an issue. Thanks to everyone who has contributed to extending this UI!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -50,7 +94,7 @@ STT Terpadu Nurul Fikri <b>(Mayang Damayanti/0110118041)</b>
 [license-url]: https://github.com/ghilmanm/ui-elena-mobile/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/muhammad-ghilman-firdaus-b118b818b
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/screenshot.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
