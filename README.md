@@ -80,6 +80,7 @@ because your needs may be different. So I will help as well as improve the code 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
+This project built with framework Flutter and use state management Getx.
 * [![Dart][dart]][dart-url]
 * [![Flutter][Flutter]][Flutter-url]
 * [![Getx][Getx]][getx-url]
