@@ -21,7 +21,7 @@
   <h3 align="center">ELENA MOBILE</h3>
 
   <p align="center">
-  This project makes the Elena application UI based on the thesis of student 
+  This project makes the Elena application UI based on the Undergraduate Thesis of student 
 STT Terpadu Nurul Fikri <b>(Mayang Damayanti/0110118041)</b>
     <br />
     <a href="https://drive.google.com/file/d/1TUiLEnU7qV8Vm3egIHgUN03lNnCvbRSl/view?usp=sharing"><strong>Explore the docs »</strong></a>
@@ -67,10 +67,10 @@ STT Terpadu Nurul Fikri <b>(Mayang Damayanti/0110118041)</b>
 <img src="https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/screenshot.png" alt="drawing" height="500" align="center"/>
 </p>
 
-I created this project based on a thesis written by Mayang Damayanti, in order to facilitate further development by students/lecturers who want to create an elena mobile application. this is my dedication to the campus so that an elena application can be made.
+I created this project based on a Undergraduate Thesis written by Mayang Damayanti, in order to facilitate further development by students/lecturers who want to create an elena mobile application. this is my dedication to the campus so that an elena application can be made.
 
 Here's why:
-* If you want to build elena mobile in your thesis or just develop elena mobile (I would love to), your time should be focused on creating the backend and implementing the UI.
+* If you want to build elena mobile in your Undergraduate Thesis or just develop elena mobile (I would love to), your time should be focused on creating the backend and implementing the UI.
 * You shouldn't do from scratch to build elena mobile app.
 * This ui is made with flutter to make it easy on multiplatform :smile:
 
