@@ -12,8 +12,8 @@
   <a href="https://flutter.dev/">
   <h1 align="center">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ghilmanm/ui-elena-mobile/44fee11ba6c22e75152790e0318c18036c4498fb/assets/image/logo.svg">
-      <img alt="Elena" src="https://raw.githubusercontent.com/ghilmanm/ui-elena-mobile/44fee11ba6c22e75152790e0318c18036c4498fb/assets/image/logo.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/logo_elena_color.svg">
+      <img alt="Elena" src="https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/logo_elena_color.svg">
     </picture>
   </h1>
 </a>
