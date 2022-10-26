@@ -1,10 +1,11 @@
+import 'package:elena/app/routes/app_routes.dart';
 import 'package:elena/app/ui/pages/home_page/info_akademik.dart';
 import 'package:elena/app/ui/pages/home_page/search_component.dart';
 import 'package:elena/app/ui/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import '../../global_widgets/appbar.dart';
+import '../../global_widgets/appbar_home.dart';
 
 import '../../../controllers/home_controller.dart';
 
@@ -15,8 +16,9 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(87.0),
-        child: Appbar(
-          onTap: () => controller.buttomSetting(),
+        child: AppbarHome(
+          onTapProfile: () => controller.buttomSetting(),
+          onTapNotif: () => Get.toNamed(AppRoutes.NOTIFIKASI),
         ),
       ),
       body: SingleChildScrollView(

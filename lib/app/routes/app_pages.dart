@@ -1,6 +1,8 @@
+import '../bindings/notifikasi_binding.dart';
+import '../ui/pages/notifikasi_page/notifikasi_page.dart';
 import '../bindings/login_binding.dart';
 import '../ui/pages/login_page/login_page.dart';
-      import '../bindings/start_binding.dart';
+import '../bindings/start_binding.dart';
 import '../ui/pages/start_page/start_page.dart';
 import '../bindings/splash_binding.dart';
 import '../ui/pages/splash_page/splash_page.dart';
@@ -27,28 +29,31 @@ class AppPages {
       name: AppRoutes.HOME,
       page: () => const HomePage(),
       binding: HomeBinding(),
-      transition: _rightToLeftTransition,
-        transitionDuration: const Duration(milliseconds: 300)
-    ),
-    GetPage(
-      name: AppRoutes.SPLASH,
-      page: () => const SplashPage(),
-      binding: SplashBinding(),
       transition: _defaultTransition,
     ),
     GetPage(
-      name: AppRoutes.START,
-      page: () => const StartPage(),
-      binding: StartBinding(),
-      transition: _rightToLeftTransition,
-      transitionDuration: const Duration(milliseconds: 300)
-    ),
+        name: AppRoutes.SPLASH,
+        page: () => const SplashPage(),
+        binding: SplashBinding(),
+        transition: _rightToLeftTransition,
+        transitionDuration: const Duration(milliseconds: 300)),
     GetPage(
-      name: AppRoutes.LOGIN,
-      page: () => const LoginPage(),
-      binding: LoginBinding(),
-      transition: _rightToLeftTransition,
-        transitionDuration: const Duration(milliseconds: 250)
-    ), 
-];
+        name: AppRoutes.START,
+        page: () => const StartPage(),
+        binding: StartBinding(),
+        transition: _rightToLeftTransition,
+        transitionDuration: const Duration(milliseconds: 300)),
+    GetPage(
+        name: AppRoutes.LOGIN,
+        page: () => const LoginPage(),
+        binding: LoginBinding(),
+        transition: _rightToLeftTransition,
+        transitionDuration: const Duration(milliseconds: 250)),
+    GetPage(
+      name: AppRoutes.NOTIFIKASI,
+      page: () => const NotifikasiPage(),
+      binding: NotifikasiBinding(),
+      transition: _defaultTransition,
+    ),
+  ];
 }

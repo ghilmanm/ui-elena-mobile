@@ -1,6 +1,7 @@
 import 'package:elena/app/data/models/history_shortcut.dart';
 import 'package:elena/app/data/models/unfinished_task.dart';
 import 'package:elena/app/ui/pages/home_page/bottom_filter.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 import '../data/models/akademik.dart';
@@ -133,8 +134,8 @@ class HomeController extends GetxController {
         .toList()) {
       selectedSemester.add(semester.nmSemester);
     }
-    print(selectedJurusan);
-    print(selectedSemester);
+    debugPrint('Jurusan yg dipilih : $selectedJurusan');
+    debugPrint('Semester yg dipilih : $selectedSemester');
   }
 
   void clickJurusan(int index) {

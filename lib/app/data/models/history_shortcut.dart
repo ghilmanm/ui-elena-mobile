@@ -28,6 +28,9 @@ class HistoryShortcut {
         kategori: json["kategori"],
       );
 
+  List<HistoryShortcut> jsonToList(List<dynamic> json) =>
+      List<HistoryShortcut>.from(json.map((model) => HistoryShortcut.fromJson(model)));
+
   Map<String, dynamic> toJson() => {
         "title": title,
         "subtitle": subtitle,

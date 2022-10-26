@@ -29,6 +29,9 @@ class UnfinishedTask {
         kategori: json["kategori"],
       );
 
+  List<UnfinishedTask> jsonToList(List<dynamic> json) =>
+      List<UnfinishedTask>.from(json.map((model) => UnfinishedTask.fromJson(model)));
+
   Map<String, dynamic> toJson() => {
         "title": title,
         "task": task,

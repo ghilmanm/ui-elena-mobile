@@ -53,6 +53,9 @@ class Semester {
     isSelect: json["isSelect"],
   );
 
+  List<Semester> jsonToList(List<dynamic> json) =>
+      List<Semester>.from(json.map((model) => Semester.fromJson(model)));
+
   Map<String, dynamic> toJson() => {
     "id_semester": idSemester,
     "nm_semester": nmSemester,

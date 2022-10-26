@@ -5,4 +5,5 @@ class AppRoutes {
   static const SPLASH = '/splash';
   static const START = '/start';
   static const LOGIN = '/login';
+  static const NOTIFIKASI = '/notifikasi';
 }

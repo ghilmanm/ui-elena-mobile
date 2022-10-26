@@ -34,6 +34,9 @@ class Akademik {
     imgUrl: json["img_url"],
   );
 
+  List<Akademik> jsonToList(List<dynamic> json) =>
+      List<Akademik>.from(json.map((model) => Akademik.fromJson(model)));
+
   Map<String, dynamic> toJson() => {
     "title": title,
     "ruang_kelas": ruangKelas,
