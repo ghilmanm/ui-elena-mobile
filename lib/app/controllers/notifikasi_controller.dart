@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:elena/app/data/models/notif.dart';
+import 'package:elena/app/ui/utils/constants/colors.dart';
 import 'package:get/get.dart';
 
 class NotifikasiController extends GetxController {
@@ -14,7 +17,7 @@ class NotifikasiController extends GetxController {
     Notif(
       idNotif: '2',
       matkul: 'Pemrograman Web Lanjutan ',
-      type: 'Tugas',
+      type: 'Materi',
       isRead: false,
       date: DateTime.parse('2022-10-26 08:32:11'),
     ),
@@ -37,37 +40,52 @@ class NotifikasiController extends GetxController {
       matkul: 'Rekayasa Perangkat Lunak ',
       type: 'Tugas',
       isRead: false,
-      date: DateTime.parse('2022-10-26 08:01:11'),
+      date: DateTime.parse('2022-10-26 20:01:11'),
     ),
-
     Notif(
       idNotif: '6',
       matkul: 'Enterprise Resources Planning',
       type: 'Quiz',
       isRead: false,
-      date: DateTime.parse('2022-10-26 08:50:11'),
+      date: DateTime.parse('2022-10-26 20:50:11'),
     ),
     Notif(
       idNotif: '7',
       matkul: 'Enterprise Resources Planning',
-      type: 'Quiz',
+      type: 'Materi',
       isRead: false,
       date: DateTime.parse('2022-10-26 08:40:11'),
     ),
     Notif(
       idNotif: '8',
       matkul: 'Enterprise Resources Planning',
-      type: 'Tugas',
+      type: 'Materi',
       isRead: false,
-      date: DateTime.parse('2022-10-26 08:23:11'),
+      date: DateTime.parse('2022-10-26 20:23:11'),
     ),
   ].obs;
 
-  String getKategoti({String? kategori}){
-    if (kategori == 'Quiz'){
+  Color getColor(int index) {
+    if(listNotif[index].type == 'Quiz'){
+      return VISUAL_LIGHT_PURPLE;
+    }
+    if(listNotif[index].type == 'Materi'){
+      return VISUAL_LIGHT_YELLOW;
+    }
+    if(listNotif[index].type == 'Tugas'){
+      return VISUAL_LIGHT_GREEN;
+    }
+    return VISUAL_LIGHT_RED;
+  }
+
+  String getKategoti({String? kategori}) {
+    if (kategori == 'Quiz') {
       return '?';
     }
-    if (kategori == 'Tugas'){
+    if (kategori == 'Materi') {
+      return '#';
+    }
+    if (kategori == 'Tugas') {
       return '!';
     }
     return '\$';

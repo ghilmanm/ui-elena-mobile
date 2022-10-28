@@ -1,4 +1,12 @@
-import '../bindings/notifikasi_binding.dart';
+import '../bindings/history_binding.dart';
+import '../ui/pages/history_page/history_page.dart';
+      import '../bindings/kontak_dosen_binding.dart';
+import '../ui/pages/kontak_dosen_page/kontak_dosen_page.dart';
+      import '../bindings/matakuliah_binding.dart';
+import '../ui/pages/matakuliah_page/matakuliah_page.dart';
+      import '../bindings/dashboard_binding.dart';
+import '../ui/pages/dashboard_page/dashboard_page.dart';
+      import '../bindings/notifikasi_binding.dart';
 import '../ui/pages/notifikasi_page/notifikasi_page.dart';
 import '../bindings/login_binding.dart';
 import '../ui/pages/login_page/login_page.dart';
@@ -55,5 +63,29 @@ class AppPages {
       binding: NotifikasiBinding(),
       transition: _defaultTransition,
     ),
-  ];
+    GetPage(
+      name: AppRoutes.DASHBOARD,
+      page: () => const DashboardPage(),
+      binding: DashboardBinding(),
+      transition: _defaultTransition,
+    ),
+    GetPage(
+      name: AppRoutes.MATAKULIAH,
+      page: () => const MatakuliahPage(),
+      binding: MatakuliahBinding(),
+      transition: _defaultTransition,
+    ),
+    GetPage(
+      name: AppRoutes.KONTAK_DOSEN,
+      page: () => const KontakDosenPage(),
+      binding: KontakDosenBinding(),
+      transition: _defaultTransition,
+    ),
+    GetPage(
+      name: AppRoutes.HISTORY,
+      page: () => const HistoryPage(),
+      binding: HistoryBinding(),
+      transition: _defaultTransition,
+    ), 
+];
 }

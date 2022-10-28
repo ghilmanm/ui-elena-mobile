@@ -94,14 +94,13 @@ class LoginPage extends GetView<LoginController> {
                   width: double.infinity,
                   height: 57,
                   child: ElevatedButton(
-                    onPressed: () => Get.offNamed(AppRoutes.HOME),
+                    onPressed: () => Get.offNamed(AppRoutes.DASHBOARD),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: BUTTON_COLOR,
-                      shadowColor:  BUTTON_COLOR,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40)),
-                      elevation: 7.0
-                    ),
+                        backgroundColor: BUTTON_COLOR,
+                        shadowColor: BUTTON_COLOR,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(40)),
+                        elevation: 7.0),
                     child: Text(
                       'Masuk',
                       style: Get.textTheme.subtitle2!.copyWith(

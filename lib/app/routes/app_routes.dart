@@ -6,4 +6,8 @@ class AppRoutes {
   static const START = '/start';
   static const LOGIN = '/login';
   static const NOTIFIKASI = '/notifikasi';
+  static const DASHBOARD = '/dashboard';
+  static const MATAKULIAH = '/matakuliah';
+  static const KONTAK_DOSEN = '/kontak-dosen';
+  static const HISTORY = '/history';
 }

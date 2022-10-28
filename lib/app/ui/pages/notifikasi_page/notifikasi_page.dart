@@ -33,7 +33,8 @@ class NotifikasiPage extends GetView<NotifikasiController> {
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
               child: InkWell(
                 onTap: () {
-                  controller.listNotif[index].isRead = !controller.listNotif[index].isRead!;
+                  controller.listNotif[index].isRead =
+                      !controller.listNotif[index].isRead!;
                   controller.listNotif.refresh();
                 },
                 customBorder: RoundedRectangleBorder(
@@ -76,7 +77,7 @@ class NotifikasiPage extends GetView<NotifikasiController> {
                                 height: 45,
                                 width: 45,
                                 decoration: BoxDecoration(
-                                  color: VISUAL_LIGHT_YELLOW,
+                                  color: controller.getColor(index),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Center(
