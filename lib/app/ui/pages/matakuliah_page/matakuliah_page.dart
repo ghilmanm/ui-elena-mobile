@@ -158,7 +158,7 @@ class MatakuliahPage extends GetView<MatakuliahController> {
                           bottom: 0,
                           child: LimitedBox(
                             maxHeight: 30,
-                            // maxWidth: 70,
+                            maxWidth: 70,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount:
@@ -178,7 +178,10 @@ class MatakuliahPage extends GetView<MatakuliahController> {
                                         child: const SizedBox(
                                           height: 28,
                                           width: 28,
-                                          child: Icon(Icons.add, color: Colors.grey,),
+                                          child: Icon(
+                                            Icons.add,
+                                            color: Colors.grey,
+                                          ),
                                         ),
                                       ),
                                     ),
