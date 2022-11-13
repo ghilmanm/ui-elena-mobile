@@ -121,6 +121,8 @@ class HomeController extends GetxController {
         title: 'Quiz 3', subtitle: 'IT Risk Management', kategori: 'quiz'),
   ].obs;
 
+  // final listSelectedSemester = <Semester>[];
+
   void submitFilter() {
     final selectedJurusan = [];
     for (Jurusan jurusan
@@ -182,3 +184,24 @@ class HomeController extends GetxController {
     );
   }
 }
+// kalo pengen dibatasi pilihan semester
+// void clickSemester(int index) {
+//   if (listSemester[index].isSelect != null) {
+//     if (listSelectedSemester.length >= 3 &&
+//         listSemester[index].isSelect == false) {
+//       if(!Get.isSnackbarOpen){
+//         Get.snackbar('Info', 'Lebih dari 3');
+//       }
+//
+//     } else {
+//       listSemester[index].isSelect = !listSemester[index].isSelect!;
+//       if (listSemester[index].isSelect == true) {
+//         listSelectedSemester.add(listSemester[index]);
+//       } else {
+//         listSelectedSemester.removeAt(listSelectedSemester.indexWhere(
+//                 (element) =>
+//             element.idSemester == listSemester[index].idSemester));
+//       }
+//     }
+//   }
+// }

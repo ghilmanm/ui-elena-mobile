@@ -31,7 +31,8 @@ class DashboardPage extends GetView<DashboardController> {
                 topLeft: Radius.circular(30),
               ),
               boxShadow: [
-                BoxShadow(color: Color(0xD000000), spreadRadius: 10, blurRadius: 10),
+                BoxShadow(
+                    color: Color(0xD000000), spreadRadius: 10, blurRadius: 10),
               ],
             ),
             child: ClipRRect(
