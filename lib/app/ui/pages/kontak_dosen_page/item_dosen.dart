@@ -32,18 +32,10 @@ class ItemDosen extends GetView<KontakDosenController> {
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: ClipOval(
-                child: Container(
-                  color: Colors.white,
-                  child: SizedBox(
-                    height: 45,
-                    width: 45,
-                    child: Image.asset(
-                      dosen.imgProfile!,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
+              child: CircleAvatar(
+                radius: 30.0,
+                backgroundImage: NetworkImage(dosen.imgProfile!),
+                backgroundColor: Colors.transparent,
               ),
             ),
             Text(

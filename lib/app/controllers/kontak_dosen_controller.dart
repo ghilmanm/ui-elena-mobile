@@ -7,7 +7,7 @@ class KontakDosenController extends GetxController {
     Dosen(
       idDosen: '1',
       nmDosen: 'Adinda Reva, M. Kom',
-      imgProfile: 'assets/image/user1.jpg',
+      imgProfile: 'https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/user1.jpg?raw=true',
       jurusan: 'TI',
       nik: '72000120',
       noHp: '08123123112',
@@ -16,7 +16,7 @@ class KontakDosenController extends GetxController {
     Dosen(
         idDosen: '2',
         nmDosen: 'Karina, M. TI',
-        imgProfile: 'assets/image/user2.jpg',
+        imgProfile: 'https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/user2.jpg?raw=true',
         jurusan: 'SI',
         nik: '72000120',
         noHp: '08123123112',
@@ -25,7 +25,7 @@ class KontakDosenController extends GetxController {
     Dosen(
         idDosen: '3',
         nmDosen: 'Alea, M. Kom',
-        imgProfile: 'assets/image/user3.jpg',
+        imgProfile: 'https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/user3.jpg?raw=true',
         jurusan: 'TI',
         nik: '72000120',
         noHp: '08123123112',
@@ -34,7 +34,7 @@ class KontakDosenController extends GetxController {
     Dosen(
         idDosen: '4',
         nmDosen: 'Adinda Reva, M. Kom',
-        imgProfile: 'assets/image/user1.jpg',
+        imgProfile: 'https://github.com/ghilmanm/ui-elena-mobile/blob/main/assets/image/user1.jpg?raw=true',
         jurusan: 'BD',
         nik: '72000120',
         noHp: '08123123112',

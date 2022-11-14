@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/kontak_dosen_controller.dart';
-import '../../utils/constants/colors.dart';
-import 'item_dosen.dart';
 import 'list_dosen.dart';
 
 class KontakDosenPage extends GetView<KontakDosenController> {
